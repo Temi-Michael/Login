@@ -17,13 +17,14 @@ font-family: 'Ysabeau Infant', sans-serif; */
 .firstNav {
     list-style-type: none;
     display: inline-flex;
+    text-transform: uppercase;
 
 }
 
 .secondNav {
     list-style-type: none;
     display: inline-flex;
-    
+    text-transform: capitalize;
 }
 
 img {
