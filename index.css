@@ -14,6 +14,18 @@ font-family: 'Ysabeau Infant', sans-serif; */
 
 }
 
+.firstNav {
+    list-style-type: none;
+    display: inline-flex;
+
+}
+
+.secondNav {
+    list-style-type: none;
+    display: inline-flex;
+    
+}
+
 img {
     width: 20px;
     height: 20px;
