@@ -41,3 +41,9 @@ img {
     text-transform: capitalize;
 }
 
+body {
+    background-image: url(https://img.freepik.com/free-vector/colorful-abstract-background_23-2148461179.jpg?w=1060&t=st=1698619568~exp=1698620168~hmac=1310da225dd47de538f61cb87ff28e6ad85628e486fb127facd83c15f610a40f);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
