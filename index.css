@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Ysabeau+Infant:ital@1&display=swap');
-/* font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Ysabeau Infant', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Ysabeau+Infant:ital@1&display=swap');
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Ysabeau Infant', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Sedgwick+Ave+Display&family=Ysabeau+Infant:ital@1&display=swap');
-/* font-family: 'Playpen Sans', cursive;
+font-family: 'Playpen Sans', cursive;
 font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Ysabeau Infant', sans-serif; */
+
+body {
+    /* background-color: red; */
+}
 
 .form_header {
     font-family: 'Playpen Sans', cursive;
@@ -12,6 +16,10 @@ font-family: 'Ysabeau Infant', sans-serif; */
     font-family: 'Ysabeau Infant', sans-serif;
     text-transform: capitalize;
 
+}
+
+.form_body {
+    
 }
 
 ul {
@@ -53,6 +61,7 @@ li:hover::before {
 li:hover {
     color: green;
     cursor: pointer;
+    /* transform: scale(1.5); */
 }
 
 img {

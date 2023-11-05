@@ -25,12 +25,24 @@
         <input type="text" name="" id="username" placeholder="username" required>
         <input type="email" name="" id="email" placeholder="email address" required>
         <input type="date" name="" id="dob" placeholder="date of birth">
-        <input type="password" name="password" id="password" placeholder="password" required>
+        <input type="password" name="password" id="password" oninput="validatePassword()" placeholder="password" required>
         <i class="far fa-eye" id="togglePasswordShow" style="margin-left: -30px; cursor: pointer;"></i>
         <i class="far fa-eye-slash" id="togglePasswordHide" style="margin-left: -30px; cursor: pointer;"></i><br>
         <input type="submit" id="submit" value="Register">
     </form>
     <script>
+
+        function validatePassword() {
+            const pass_length = document.getElementById("password")
+
+            if (pass_length.value.length <= 7) {
+                pass_length.style.borderBottom = 'solid red';
+            } else {
+                pass_length.style.borderBottom = 'none';
+            }
+        }
+        
+
         function openLink(url) {
             window.open(url, "_blank");
         }
