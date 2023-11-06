@@ -35,8 +35,10 @@
         function validatePassword() {
             const pass_length = document.getElementById("password")
 
-            if (pass_length.value.length <= 7) {
+            if (pass_length.value.length < 8 && pass_length.value.length > 0) {
                 pass_length.style.borderBottom = 'solid red';
+            } else if (pass_length.value.length = 0){
+                pass_length.style.borderBottom = 'none';
             } else {
                 pass_length.style.borderBottom = 'none';
             }
