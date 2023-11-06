@@ -53,16 +53,28 @@
         const togglePasswordHide = document.getElementById('togglePasswordHide');
 
 
-        togglePasswordShow.addEventListener('click', function () {
-            togglePassword.type = "text";
-            togglePasswordShow.style.display = 'none';
-            togglePasswordHide.style.display = 'inline';
-        });
+        //togglePasswordShow.addEventListener('click', function () {
+          //  togglePassword.type = "text";
+            //togglePasswordShow.style.display = 'none';
+           // togglePasswordHide.style.display = 'inline';
+        //});
+
+        //togglePasswordHide.addEventListener('click', function () {
+          //  togglePassword.type = "pass";
+            //togglePasswordShow.style.display = 'inline';
+            //togglePasswordHide.style.display = 'none';
+        //});
 
         togglePasswordHide.addEventListener('click', function () {
-            togglePassword.type = "password";
-            togglePasswordShow.style.display = 'inline';
+            togglePassword.type = "text";
             togglePasswordHide.style.display = 'none';
+            togglePasswordShow.style.display = 'inline';
+        });
+
+        togglePasswordShow.addEventListener('click', function () {
+            togglePassword.type = "password";
+            togglePasswordHide.style.display = 'inline';
+            togglePasswordShow.style.display = 'none';
         });
 
     </script>
