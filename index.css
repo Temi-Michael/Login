@@ -76,6 +76,11 @@ img {
 
 #pass_valid_length {
     display: none;
+    color: red;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 15px;
 }
 
 ::placeholder {
