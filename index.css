@@ -74,6 +74,10 @@ img {
     display: none;
 }
 
+#pass_valid_length {
+    display: none;
+}
+
 ::placeholder {
     text-transform: capitalize;
     font-family: 'Playpen Sans', cursive;

@@ -20,28 +20,34 @@
 <body>
     <form action="index.php" method="get" class="form_body">
         <h3 class="form_header" id="head">index form creation</h3>
-        <input type="text" name="" id="surname" placeholder="surname" required>
-        <input type="text" name="" id="first_name" placeholder="first name" required>
-        <input type="text" name="" id="middle_name" placeholder="middle name">
-        <input type="text" name="" id="username" placeholder="username" required>
-        <input type="email" name="" id="email" placeholder="email address" required>
-        <input type="date" name="" id="dob" placeholder="date of birth">
+        <input type="text" name="" id="surname" placeholder="surname" required><br>
+        <input type="text" name="" id="first_name" placeholder="first name" required><br>
+        <input type="text" name="" id="middle_name" placeholder="middle name"><br>
+        <input type="text" name="" id="username" placeholder="username" required><br>
+        <input type="email" name="" id="email" placeholder="email address" required><br>
+        <input type="date" name="" id="dob" placeholder="date of birth"><br>
         <input type="password" name="password" id="password" oninput="validatePassword()" placeholder="password" required>
         <i class="far fa-eye" id="togglePasswordShow" style="margin-left: -30px; cursor: pointer;"></i>
-        <i class="far fa-eye-slash" id="togglePasswordHide" style="margin-left: -30px; cursor: pointer;"></i><br>
+        <i class="far fa-eye-slash" id="togglePasswordHide" style="margin-left: -30px; cursor: pointer;"></i>
+        <i id="pass_valid_length">Password too short</i>
+        <br>
         <input type="submit" id="submit" value="Register">
     </form>
     <script>
 
         function validatePassword() {
             const pass_length = document.getElementById("password")
+            const pass_valid_length = document.getElementById("pass_valid_length");
 
             if (pass_length.value.length < 8 && pass_length.value.length > 0) {
                 pass_length.style.borderBottom = 'solid red';
+                pass_valid_length.style.display = 'inline';
             } else if (pass_length.value.length = 0){
                 pass_length.style.borderBottom = 'none';
+                pass_valid_length.style.display = 'none';
             } else {
                 pass_length.style.borderBottom = 'none';
+                pass_valid_length.style.display = 'none';
             }
         }
         
