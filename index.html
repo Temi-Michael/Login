@@ -29,9 +29,9 @@
         <input type="password" name="password" id="password" oninput="validatePassword()" placeholder="password" required>
         <i class="far fa-eye" id="togglePasswordShow" style="margin-left: -30px; cursor: pointer;"></i>
         <i class="far fa-eye-slash" id="togglePasswordHide" style="margin-left: -30px; cursor: pointer;"></i><br>
-            <i id="pass_valid_length">Password too short!!</i><br>
-            <i id="pass_valid_letter">Password must contain a capital letter!!</i><br>
-            <i id="pass_valid_number">Password must contain a number!!</i>
+            <p id="pass_valid_length">Password too short!!</p><br>
+            <p id="pass_valid_letter">Password must contain a capital letter!!</p><br>
+            <p id="pass_valid_number">Password must contain a number!!</p>
         <br>
         <input type="submit" id="submit" value="Register">
     </form>
@@ -41,7 +41,8 @@
             const pass_length = document.getElementById("password");
             const pass_valid_length = document.getElementById("pass_valid_length");
             const pass_valid_letter = document.getElementById("pass_valid_letter");
-            const pass_valid_number = document.getElementById("pass_valid_number");
+            const pass_valid_number = document.getElementById('pass_valid_number');
+
 
             if (pass_length.value.length < 8 && pass_length.value.length > 0) {
                 pass_length.style.borderBottom = 'solid red';
@@ -53,8 +54,24 @@
                 pass_length.style.borderBottom = 'none';
                 pass_valid_length.style.display = 'none';
             }
+
+            
+            if(pass_length.value.search(/[A-Z]/) < 0) {
+                pass_valid_letter.style.display = 'inline';
+                pass_length.style.borderBottom = 'solid red';
+            } else {
+                pass_valid_letter.style.display ='none';
+                pass_length.style.borderBottom = 'none';
+            }
+
+            if(pass_length.value.search(/[0-9]/) < 0) {
+                pass_valid_number.style.display = 'inline';
+                pass_length.style.borderBottom = 'solid red';
+            } else {
+                pass_valid_number.style.display = 'none';
+                pass_length.style.borderBottom = 'none';   
+            }
         }
-        
 
         function openLink(url) {
             window.open(url, "_blank");
