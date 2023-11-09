@@ -7,7 +7,7 @@ font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Ysabeau Infant', sans-serif; */
 
 body {
-    /* background-color: red; */
+    
 }
 
 .form_header {
@@ -22,7 +22,7 @@ body {
     
 }
 
-ul {
+#nav {
     display: flex;
     justify-content: center;
     padding: 10px 20px;
@@ -74,7 +74,9 @@ img {
     display: none;
 }
 
-#pass_valid_length {
+#pass_valid_length,
+#pass_valid_number,
+#pass_valid_letter {
     display: none;
     color: red;
     font-family: 'Playpen Sans', cursive;
@@ -82,6 +84,7 @@ img {
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 15px;
 }
+
 
 ::placeholder {
     text-transform: capitalize;
